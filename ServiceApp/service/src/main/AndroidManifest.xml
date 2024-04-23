@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <permission
+        android:name="com.tw.test.service.SERVICE_APP_ACCESS"
+        android:protectionLevel="signature" />
     <application>
         <service
             android:name=".ServiceApp"
+            android:permission="com.tw.test.service.SERVICE_APP_ACCESS"
             android:enabled="true"
             android:exported="true" />
     </application>
