@@ -11,7 +11,7 @@ public class ServiceApp extends Service {
     @Nullable
     @Override
     public IBinder onBind(Intent intent) {
-        return ServiceAppAidlInterfaceImpl.instance();
+        return ServiceAppAidlInterfaceImpl.instance(this);
     }
 
     @Override
